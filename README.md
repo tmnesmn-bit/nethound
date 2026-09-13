@@ -1,8 +1,9 @@
 # 🌐 NetHound
 
 Wi-Fi networks around you, and devices on your own network — in plain English.
-Sister app to [BlueHound](https://tmnesmn-bit.github.io/bluehound/) (Bluetooth) and
-[BlueHound Guard](https://github.com/tmnesmn-bit/bluehound-android).
+Sister app to [BlueHound](https://tmnesmn-bit.github.io/bluehound/) (Bluetooth),
+[BlueHound Guard](https://github.com/tmnesmn-bit/bluehound-android), and
+[RadioHound](https://github.com/tmnesmn-bit/radiohound) (cell towers and the radio dial).
 
 **Networks tab:** every Wi-Fi network in range — name, signal, channel, security,
 and who makes the router (looked up from its MAC address against the official
