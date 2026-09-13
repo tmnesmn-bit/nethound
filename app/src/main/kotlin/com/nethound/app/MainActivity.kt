@@ -225,6 +225,7 @@ class MainActivity : Activity() {
         caps.contains("SAE") || caps.contains("WPA3") -> "WPA3 🔒" to null
         caps.contains("WPA2") -> "WPA2 🔒" to null
         caps.contains("WPA") -> "WPA (old) 🔒" to null
+        caps.contains("OWE") -> "Enhanced Open 🔒" to null
         caps.contains("WEP") -> "WEP 🔓" to
             "⚠️ outdated WEP security — easily broken; if this is your network, upgrade the router"
         else -> "OPEN" to
@@ -232,6 +233,7 @@ class MainActivity : Activity() {
     }
 
     private fun band(freq: Int): String = when {
+        freq == 2484 -> "2.4 GHz ch 14"
         freq in 2400..2500 -> "2.4 GHz ch ${(freq - 2407) / 5}"
         freq in 4900..5900 -> "5 GHz ch ${(freq - 5000) / 5}"
         freq > 5900 -> "6 GHz"
